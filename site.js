@@ -5,7 +5,7 @@
  *
  * site      信箱、表單、社群連結、公開數據
  * apps      每週小 App 實驗（會自動排序、算出貨數、產生候補名單選單）
- * projects  其他作品（Hank 之前做過的專案）
+ * works     作品（首頁精選＋全部作品）
  */
 
 window.AILAB = {
@@ -97,13 +97,56 @@ window.AILAB = {
   ],
 
   /*
-   * 其他作品（之前做過的專案）
-   *   name、nameEn、year、tagline、role（你負責什麼）、tags、url（作品連結）、image（截圖網址，可留空）
-   *   placeholder: true = 佔位卡，網頁上顯示「即將公開」。補上真資料後刪掉這行。
+   * 作品（首頁「精選作品」與「全部作品」）
+   *   slug      英文代號，不可重複（之後若做作品詳情頁，網址會是 /works/<slug>）
+   *   name      中文名稱      nameEn  英文名稱
+   *   featured  true = 放在首頁精選（建議 3 個，依陣列順序）
+   *   kind      服務類別："workflow" 工作流程工具 / "learning" 教學與互動模擬 / "experience" 內容與體驗型 App
+   *   tagline   一句話用途（卡片上顯示）
+   *   url       開啟 App 的網址。留空 = 尚未公開，卡片顯示「即將公開」，按鈕改成「詢問這類工具」
+   *   image     16:9 真實截圖（放 img/works/）。留空會顯示「畫面整理中」
+   *   cta       開啟按鈕文字，預設「開啟 App」
    */
-  projects: [
-    { placeholder: true, name: "作品一", nameEn: "Project One", year: "", tagline: "待補：一句話說明這個作品解決什麼問題。", role: "", tags: [], url: "", image: "" },
-    { placeholder: true, name: "作品二", nameEn: "Project Two", year: "", tagline: "待補：一句話說明這個作品解決什麼問題。", role: "", tags: [], url: "", image: "" },
-    { placeholder: true, name: "作品三", nameEn: "Project Three", year: "", tagline: "待補：一句話說明這個作品解決什麼問題。", role: "", tags: [], url: "", image: "" }
+  works: [
+    {
+      slug: "starvoyager",
+      name: "星航者",
+      nameEn: "Starvoyager",
+      featured: true,
+      kind: "experience",
+      tagline: "駕駛太空船探索 1:1 真實尺度的太陽系，從太空百科、宇宙故事到巡航觀賞，邊玩邊學。",
+      url: "https://starvoyager.pages.dev",
+      image: "img/works/starvoyager.jpg"
+    },
+    {
+      slug: "endoscope-sim",
+      name: "內視鏡模擬器",
+      nameEn: "Endoscope Simulator",
+      featured: true,
+      kind: "learning",
+      tagline: "為醫師、住院醫師與醫學生設計的網頁內視鏡練習工具，手機也能當操作部。",
+      url: "https://endoscope-sim.pages.dev",
+      image: "img/works/endoscope-sim.jpg"
+    },
+    {
+      slug: "duty-scheduler",
+      name: "醫師排班系統",
+      nameEn: "Duty Scheduler",
+      featured: true,
+      kind: "workflow",
+      tagline: "把值班規則與不可排日期整理成班表，讓使用者能檢查排班結果。",
+      url: "",      // 待補：公開網址或操作示範影片
+      image: ""     // 待補：用虛構人名的班表截圖（輸入限制＋產出結果）
+    },
+    {
+      slug: "wealth-calculator",
+      name: "財富自由計算機",
+      nameEn: "Wealth Calculator",
+      featured: false,
+      kind: "workflow",
+      tagline: "調整投入金額與報酬假設，觀察不同條件如何影響資產累積。",
+      url: "",      // 待補
+      image: ""     // 待補
+    }
   ]
 };
