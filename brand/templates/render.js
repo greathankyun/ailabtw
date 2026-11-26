@@ -11,6 +11,7 @@ const groups = {
   'carousel-progress.html': 'pillar-4-progress',
   'stories.html': 'stories',
   'project-showcase.html': 'project-showcase',
+  'project-starvoyager.html': 'project-starvoyager',
   'og-image.html': 'web'
 };
 // [svg, width, height, output, transparent background?]
