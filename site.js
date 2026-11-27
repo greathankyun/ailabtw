@@ -129,10 +129,30 @@ window.AILAB = {
       image: "img/works/endoscope-sim.jpg"
     },
     {
+      slug: "color-match",
+      name: "彩妝色彩鑑定",
+      nameEn: "Color Match",
+      featured: true,
+      kind: "experience",
+      tagline: "一張素顏自拍找出四季 12 型個人色彩，推薦唇色、腮紅、眼影與底妝。照片只在手機上分析，不上傳。",
+      url: "https://color-match-ez8.pages.dev",
+      image: "img/works/color-match.jpg"
+    },
+    {
+      slug: "playlands",
+      name: "遊戲群島",
+      nameEn: "Playlands",
+      featured: false,
+      kind: "experience",
+      tagline: "17 款原創策略桌遊合集，可裝到手機離線玩，支援 AI 對手、同機多人與線上連線。",
+      url: "https://greathankyun.github.io/board-games/",
+      image: "img/works/playlands.jpg"
+    },
+    {
       slug: "duty-scheduler",
       name: "醫師排班系統",
       nameEn: "Duty Scheduler",
-      featured: true,
+      featured: false,
       kind: "workflow",
       tagline: "把值班規則與不可排日期整理成班表，讓使用者能檢查排班結果。",
       url: "",      // 待補：公開網址或操作示範影片
